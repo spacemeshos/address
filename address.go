@@ -3,9 +3,10 @@ package address
 import (
 	"errors"
 	"fmt"
-	"github.com/cosmos/btcutil/bech32"
 
+	"github.com/cosmos/btcutil/bech32"
 	scale "github.com/spacemeshos/go-scale"
+
 	"github.com/spacemeshos/go-spacemesh/log"
 )
 
@@ -36,14 +37,6 @@ var conf = &Config{
 	NetworkHRP: "sm",
 }
 
-func init() {
-	println("address.go")
-	println("address.go")
-	println("address.go")
-	println("address.go")
-	println("address.go")
-}
-
 // DefaultAddressConfig returns the default configuration of the address package.
 func DefaultAddressConfig() *Config {
 	return conf
@@ -53,6 +46,14 @@ func DefaultAddressConfig() *Config {
 func DefaultTestAddressConfig() *Config {
 	conf = &Config{
 		NetworkHRP: "stest",
+	}
+	return conf
+}
+
+// SetAddressConfig set hrp prefix for pkg configuration.
+func SetAddressConfig(networkHRP string) *Config {
+	conf = &Config{
+		NetworkHRP: networkHRP,
 	}
 	return conf
 }

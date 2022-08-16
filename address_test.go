@@ -1,12 +1,12 @@
 package address_test
 
 import (
-	"github.com/stretchr/testify/require"
 	"math/rand"
 	"testing"
 	"time"
 
 	"github.com/spacemeshos/address"
+	"github.com/stretchr/testify/require"
 )
 
 func init() {
@@ -103,6 +103,7 @@ func TestAddress_GenerateAddress(t *testing.T) {
 		srcAddr := address.GenerateAddress(RandomBytes(32))
 		newAddr, err := address.StringToAddress(srcAddr.String())
 		require.NoError(t, err)
+
 		checkAddressesEqual(t, srcAddr, newAddr)
 	})
 	t.Run("generate from string", func(t *testing.T) {
