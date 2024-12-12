@@ -1,7 +1,6 @@
 module github.com/spacemeshos/address
 
-go 1.21.3
-toolchain go1.23.4
+go 1.23.4
 
 require (
 	github.com/cosmos/btcutil v1.0.5
