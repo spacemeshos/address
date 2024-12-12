@@ -6,7 +6,7 @@ require (
 	github.com/cosmos/btcutil v1.0.5
 	github.com/spacemeshos/go-scale v1.1.12
 	github.com/spacemeshos/go-spacemesh v1.2.2
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
