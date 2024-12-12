@@ -6,7 +6,6 @@ import (
 
 	"github.com/cosmos/btcutil/bech32"
 	scale "github.com/spacemeshos/go-scale"
-
 	"github.com/spacemeshos/go-spacemesh/log"
 )
 
@@ -81,12 +80,18 @@ func StringToAddress(src string) (Address, error) {
 	}
 
 	if conf.NetworkHRP != hrp {
-		return addr, fmt.Errorf("wrong network id: expected `%s`, got `%s`: %w", conf.NetworkHRP, hrp, ErrUnsupportedNetwork)
+		return addr, fmt.Errorf(
+			"wrong network id: expected `%s`, got `%s`: %w",
+			conf.NetworkHRP, hrp, ErrUnsupportedNetwork,
+		)
 	}
 	// check that first 4 bytes are 0.
 	for i := 0; i < AddressReservedSpace; i++ {
 		if dataConverted[i] != 0 {
-			return addr, fmt.Errorf("expected first %d bytes to be 0, got %d: %w", AddressReservedSpace, dataConverted[i], ErrMissingReservedSpace)
+			return addr, fmt.Errorf(
+				"expected first %d bytes to be 0, got %d: %w",
+				AddressReservedSpace, dataConverted[i], ErrMissingReservedSpace,
+			)
 		}
 	}
 

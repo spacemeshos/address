@@ -1,12 +1,12 @@
 package address_test
 
 import (
-	"math/rand"
+	"crypto/rand"
 	"testing"
-	"time"
+
+	"github.com/stretchr/testify/require"
 
 	"github.com/spacemeshos/address"
-	"github.com/stretchr/testify/require"
 )
 
 func init() {
@@ -131,7 +131,6 @@ func checkAddressesEqual(t *testing.T, addrA, addrB address.Address) {
 
 // RandomBytes generates random data in bytes for testing.
 func RandomBytes(size int) []byte {
-	rand.Seed(time.Now().UnixNano())
 	b := make([]byte, size)
 	_, err := rand.Read(b)
 	if err != nil {
