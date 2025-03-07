@@ -12,8 +12,8 @@ github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRI
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rogpeppe/go-internal v1.10.0 h1:TMyTOH3F/DB16zRVcYyreMH6GnZZrwQVAoYjRBZyWFQ=
 github.com/rogpeppe/go-internal v1.10.0/go.mod h1:UQnix2H7Ngw/k4C5ijL5+65zddjncjaFoBhdsK/akog=
-github.com/spacemeshos/go-scale v1.2.1 h1:+IJ6KmFl9tF1Om8B1NvEwilGpBG1ebr4Se8A0Fe4puE=
-github.com/spacemeshos/go-scale v1.2.1/go.mod h1:fpO6tCoKdUmvF6o9zkUtq2erSOH5t4ik02Zwdm31qOs=
+github.com/spacemeshos/go-scale v1.3.0 h1:J3rbksTxInnM86T8GnMGqD3iZOQJja7YIrfjMsQ8tUk=
+github.com/spacemeshos/go-scale v1.3.0/go.mod h1:cYK6xEozIptppvOybr3naxr9hrSVvXG/LInC/DrJofA=
 github.com/spacemeshos/go-spacemesh v1.7.9 h1:3vbxha4drpnGj6vRGG13EYv0L70zzZz/rEWoH+HlCRo=
 github.com/spacemeshos/go-spacemesh v1.7.9/go.mod h1:u0xsNznky7+NJ2ZQhVeyJR7jFuaqt75iQeuAT/vv5F8=
 github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOfJA=

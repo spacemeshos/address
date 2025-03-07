@@ -1,10 +1,9 @@
 module github.com/spacemeshos/address
 
 go 1.23.4
-
 require (
 	github.com/cosmos/btcutil v1.0.5
-	github.com/spacemeshos/go-scale v1.2.1
+	github.com/spacemeshos/go-scale v1.3.0
 	github.com/spacemeshos/go-spacemesh v1.7.9
 	github.com/stretchr/testify v1.10.0
 )
