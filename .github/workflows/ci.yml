@@ -32,14 +32,16 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - name: set up go
+        uses: actions/setup-go@v5
         with:
-          go-version-file: "go.mod"
+          check-latest: true
+          go-version-file: go.mod
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v6
         with:
           # Optional: version of golangci-lint to use in form of v1.2 or v1.2.3 or `latest` to use the latest version
-          version: v1.61.0
+          version: v1.64.6
 
   unittests:
     runs-on: ubuntu-latest
@@ -53,6 +55,7 @@ jobs:
       - name: set up go
         uses: actions/setup-go@v5
         with:
-          go-version-file: "go.mod"
+          check-latest: true
+          go-version-file: go.mod
       - name: unit tests
         run: make test-race
